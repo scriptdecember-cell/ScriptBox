@@ -239,7 +239,7 @@ if not _ok then GUI.Parent=LP.PlayerGui end
 local flyActive = false
 
 -- ─── КЛЮЧ API (замени на свой после отзыва старого) ──────────────────────────
-local OPENAI_KEY = "YOUR_KEY_HERE"
+local OPENAI_KEY = "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"
 local OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 local OPENAI_MODEL = "gpt-4o-mini"
 
@@ -254,7 +254,7 @@ local httpRequest = (
     type(request) == "function" and request
 ) or nil
 
-local HTTP_AVAILABLE = httpRequest ~= nil and OPENAI_KEY ~= "YOUR_KEY_HERE"
+local HTTP_AVAILABLE = httpRequest ~= nil and OPENAI_KEY ~= "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"
 
 -- ─── ЛОКАЛЬНЫЙ FALLBACK классификатор (когда API недоступен) ─────────────────
 local _LOCAL_THREATS = {
